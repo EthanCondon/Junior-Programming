@@ -1331,6 +1331,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1231941760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231941758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdb43bf07106964f9f2156ec7d8e3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
 --- !u!4 &1312232381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3858995680632013777, guid: 51a084e4035b24e76997744a50c711d4, type: 3}
@@ -1433,6 +1445,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1231941759}
+    - targetCorrespondingSourceObject: {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1231941760}
   m_SourcePrefab: {fileID: 100100000, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
 --- !u!1 &1512174284 stripped
 GameObject:
