@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1233245309030491602}
   - component: {fileID: 7389845977290375653}
   - component: {fileID: 2209058048890229733}
+  - component: {fileID: 481330339118510175}
   m_Layer: 0
   m_Name: Food_Cookie_01
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7513897483775206783}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.29889974, y: -0, z: -0, w: 0.95428455}
+  m_LocalRotation: {x: 0.29889914, y: 0, z: 0, w: 0.9542847}
   m_LocalPosition: {x: 3.9674315, y: 2.681, z: 11.534478}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -103,3 +104,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 40
+--- !u!114 &481330339118510175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7513897483775206783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45952e5af2f61ba41808df4342512f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
