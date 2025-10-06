@@ -1633,6 +1633,7 @@ GameObject:
   - component: {fileID: 829093005625763073}
   - component: {fileID: 7032694027597626704}
   - component: {fileID: 7827429513610438295}
+  - component: {fileID: 4704027965055320121}
   m_Layer: 0
   m_Name: Animal_Cow_White
   m_TagString: Untagged
@@ -1703,6 +1704,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45952e5af2f61ba41808df4342512f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &4704027965055320121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7878346359629103817}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.093084, y: 33.4124, z: 48.773937}
+  m_Center: {x: 0.6052229, y: 16.206236, z: 0.01159509}
 --- !u!1 &7933676054387939450
 GameObject:
   m_ObjectHideFlags: 0
