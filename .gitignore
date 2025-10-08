@@ -13,6 +13,7 @@
 *.log
 /Prototype 1/Library/
 /Prototype 2/Library/
+/Prototype 3/Library/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
