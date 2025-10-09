@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1904
     height: 973
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 16
+  controlID: 25
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 26
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -386,7 +386,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 626
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -439,7 +439,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Course Library/_Source_Files/FBX/Animations
+    - Assets/Course Library/Sound/SFX
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Course Library/_Source_Files/FBX/Animations
+  - Assets/Course Library/Sound/SFX
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\02ETHAN.CONDON\Ethan Condon\Repositories\Junior-Programming\Prototype
     3
@@ -457,9 +457,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 48}
-    m_SelectedIDs: 36b00000
-    m_LastClickedID: 45110
-    m_ExpandedIDs: 00000000c4ae0000f4af000038b000003ab0000000ca9a3bffffff7f
+    m_SelectedIDs: 76b50000
+    m_LastClickedID: 46454
+    m_ExpandedIDs: 00000000c6ae0000faaf000032b0000034b0000066b0000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +488,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c4ae0000
+    m_ExpandedIDs: 00000000c6ae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1209,9 +1209,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 13.17173, y: 2.9537892, z: 12.869587}
+    m_Target: {x: 13.755657, y: -4.49119, z: 34.343536}
     speed: 2
-    m_Value: {x: 13.17173, y: 2.9537892, z: 12.869587}
+    m_Value: {x: 13.755657, y: -4.49119, z: 34.343536}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1257,9 +1257,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.077214114, y: -0.16021304, z: 0.012568253, w: -0.9839909}
+    m_Target: {x: -0.08694127, y: -0.07703391, z: 0.0067063496, w: -0.99322504}
     speed: 2
-    m_Value: {x: -0.0772131, y: -0.16021094, z: 0.012568088, w: -0.98397803}
+    m_Value: {x: -0.08692964, y: -0.07852233, z: 0.006836638, w: -0.9930916}
   m_Size:
     m_Target: 24.117138
     speed: 2
@@ -1335,10 +1335,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: eaac0000
+      scrollPos: {x: 0, y: 12}
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1afbffff
+      m_ExpandedIDs: 1afbffff68ab0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
