@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 25
+  controlID: 114
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -386,7 +386,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 626
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -439,7 +439,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Course Library/Sound/SFX
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Course Library/Sound/SFX
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\02ETHAN.CONDON\Ethan Condon\Repositories\Junior-Programming\Prototype
     3
@@ -457,9 +457,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 48}
-    m_SelectedIDs: 76b50000
-    m_LastClickedID: 46454
-    m_ExpandedIDs: 00000000c6ae0000faaf000032b0000034b0000066b0000000ca9a3bffffff7f
+    m_SelectedIDs: 28b00000
+    m_LastClickedID: 45096
+    m_ExpandedIDs: 00000000f0ae000024b000005cb0000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +488,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c6ae0000
+    m_ExpandedIDs: 00000000f0ae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1209,9 +1209,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 13.755657, y: -4.49119, z: 34.343536}
+    m_Target: {x: 7.093702, y: -0.90829134, z: 35.40147}
     speed: 2
-    m_Value: {x: 13.755657, y: -4.49119, z: 34.343536}
+    m_Value: {x: 7.093702, y: -0.90829134, z: 35.40147}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1257,9 +1257,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08694127, y: -0.07703391, z: 0.0067063496, w: -0.99322504}
+    m_Target: {x: -0.04978825, y: -0.006894521, z: 0.00030701334, w: -0.99875295}
     speed: 2
-    m_Value: {x: -0.08692964, y: -0.07852233, z: 0.006836638, w: -0.9930916}
+    m_Value: {x: -0.051285457, y: -0.0068939356, z: 0.0003173501, w: -0.9986602}
   m_Size:
     m_Target: 24.117138
     speed: 2
@@ -1335,10 +1335,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 12}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1afbffff68ab0000
+      m_ExpandedIDs: 1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -12,10 +12,12 @@ public class PlayerController : MonoBehaviour
 	public ParticleSystem dirtParticle;
 	public AudioClip jumpSound;
 	public AudioClip crashSound;
+	private AudioSource playerAudio;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+	playerAudio = GetComponent<AudioSource>();
         playerRb = GetComponent<Rigidbody>();
 	playerAnim = GetComponent<Animator>();
 	Physics.gravity *= gravityModifier;
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver) {
+	playerAudio.PlayOneShot(jumpSound, 1.0f);
 	dirtParticle.Stop();
 	playerRb.AddForce(Vector3.up * 10, ForceMode.Impulse);
 	isOnGround = false;
@@ -38,6 +41,7 @@ public class PlayerController : MonoBehaviour
 	else if (collision.gameObject.CompareTag("Obstacle")) {
 	gameOver = true;
 	Debug.Log("Game Over!"); 
+	playerAudio.PlayOneShot(crashSound, 1.0f);
 	explosionParticle.Play();
 	dirtParticle.Stop();
 	playerAnim.SetBool("Death_b", true); 
