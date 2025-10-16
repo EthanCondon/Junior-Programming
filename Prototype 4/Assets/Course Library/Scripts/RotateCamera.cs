@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class RotateCamera : MonoBehaviour
 {
+
+	public float rotationSpeed = 20.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,6 +13,6 @@ public class RotateCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+	transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
 }

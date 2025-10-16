@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 1163665360}
   - component: {fileID: 1163665359}
   - component: {fileID: 1163665358}
+  - component: {fileID: 1163665363}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -333,12 +334,25 @@ Transform:
   m_GameObject: {fileID: 1163665357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.08, y: -0.173, z: -1.28}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1163665363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163665357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15442a1933689784da5126394f54ec2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  speed: 2
 --- !u!1 &1211016355
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,13 +566,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211419925}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -16.08}
+  m_LocalRotation: {x: 0.18995434, y: -0, z: -0, w: 0.981793}
+  m_LocalPosition: {x: 0, y: 6.8, z: -16.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1765352191}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 21.9, y: 0, z: 0}
 --- !u!114 &1211419929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -735,6 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04b517a557a5d75468cc13e9913075b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateCamera
+  rotationSpeed: 20
 --- !u!4 &1765352191
 Transform:
   m_ObjectHideFlags: 0
