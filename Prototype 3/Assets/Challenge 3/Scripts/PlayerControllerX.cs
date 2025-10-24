@@ -41,7 +41,7 @@ public class PlayerControllerX : MonoBehaviour
         if (transform.position.y > upperLimit)
         {
             transform.position = new Vector3(transform.position.x, upperLimit, transform.position.z);
-            playerRb.velocity = Vector3.zero;
+            playerRb.linearVelocity = Vector3.zero;
         }
     }
 
