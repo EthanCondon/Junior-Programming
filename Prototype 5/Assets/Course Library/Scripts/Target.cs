@@ -8,6 +8,9 @@ public class Target : MonoBehaviour
     private float maxTorque = 10;
     private float xRange = 4;
     private float ySpawnPos = -6;
+	private GameManager gameManager;
+	public int pointValue;
+	public ParticleSystem explosionParticle;
 
     void Start()
     {
@@ -15,6 +18,7 @@ public class Target : MonoBehaviour
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
         targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
         transform.position = RandomSpawnPos();
+	gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     Vector3 RandomForce()
@@ -32,15 +36,30 @@ public class Target : MonoBehaviour
         return new Vector3(Random.Range(-xRange, xRange), ySpawnPos, 0);
     }
 
-    // ← THIS MAKES CLICK DISAPPEAR WORK
-    private void OnMouseDown()
+    
+   private void OnMouseDown()
+{
+    if (gameManager != null)
     {
-        Destroy(gameObject);
+        gameManager.UpdateScore(pointValue);
     }
 
-    // optional: if you want targets to disappear when falling off screen
+	Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+	Destroy(gameObject);  // THIS ONLY DESTROYS THE TARGET
+	}
+
+
+    
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
     }
+
+public class ClickTest : MonoBehaviour
+{
+    private void OnMouseDown()
+    {
+        Debug.Log("ClickTest works on " + gameObject.name);
+    }
+}
 }
