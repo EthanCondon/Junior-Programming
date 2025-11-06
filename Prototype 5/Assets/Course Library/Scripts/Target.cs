@@ -39,13 +39,13 @@ public class Target : MonoBehaviour
     
    private void OnMouseDown()
 {
-    if (gameManager != null)
+    if (gameManager.isGameActive)
     {
         gameManager.UpdateScore(pointValue);
     }
 
 	Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
-	Destroy(gameObject);  // THIS ONLY DESTROYS THE TARGET
+	Destroy(gameObject);
 	}
 
 
@@ -53,13 +53,8 @@ public class Target : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+	if (!gameObject.CompareTag("Bad 1")) { gameManager.GameOver(); }
     }
 
-public class ClickTest : MonoBehaviour
-{
-    private void OnMouseDown()
-    {
-        Debug.Log("ClickTest works on " + gameObject.name);
-    }
-}
+
 }
