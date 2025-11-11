@@ -51,10 +51,15 @@ public class Target : MonoBehaviour
 
     
     private void OnTriggerEnter(Collider other)
+{
+    Destroy(gameObject);
+
+    if (gameObject.CompareTag("Bad 1"))
     {
-        Destroy(gameObject);
-	if (!gameObject.CompareTag("Bad 1")) { gameManager.GameOver(); }
+        gameManager.GameOver();
     }
+}
+
 
 
 }
