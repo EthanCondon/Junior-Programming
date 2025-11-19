@@ -8,20 +8,25 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> targets;
-    private float spawnRate = 1.0f;
+    public float baseSpawnRate = 1.0f;  // new base rate
+    private float spawnRate;
     private int score;
-    public TextMeshProUGUI scoreText;
-	public TextMeshProUGUI gameOverText;
-	public bool isGameActive;
-	public Button restartButton;
 
-    void Start()
-    {
-	isGameActive = true;
-        StartCoroutine(SpawnTarget());
-        score = 0;
-        UpdateScore(0);	
-    }
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI gameOverText;
+    public bool isGameActive;
+    public Button restartButton;
+    public GameObject titleScreen;
+
+void Start()
+{
+    spawnRate = baseSpawnRate;
+    isGameActive = false;        // NOT TRUE
+    score = 0;
+    UpdateScore(0);
+
+    titleScreen.gameObject.SetActive(true);  // SHOW TITLE SCREEN
+}
 
     IEnumerator SpawnTarget()
     {
@@ -39,14 +44,33 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
-	public void GameOver() {
-	gameOverText.gameObject.SetActive(true);
-	isGameActive = false;
-	restartButton.gameObject.SetActive(true); }
+    public void GameOver()
+    {
+        gameOverText.gameObject.SetActive(true);
+        isGameActive = false;
+        restartButton.gameObject.SetActive(true);
+    }
 
-	public void RestartGame() {
-	SceneManager.LoadScene(SceneManager.GetActiveScene().name); }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
+    public void StartGame(int difficulty)
+    {
+        spawnRate = baseSpawnRate / Mathf.Max(1, difficulty);
+
+        isGameActive = true;
+        score = 0;
+
+        StartCoroutine(SpawnTarget());
+        UpdateScore(0);
+        titleScreen.gameObject.SetActive(false);
+    }
+
+    //  keep your original zero-arg version if something else calls it
+    public void StartGame()
+    {
+        StartGame(1);
+    }
 }
-
-

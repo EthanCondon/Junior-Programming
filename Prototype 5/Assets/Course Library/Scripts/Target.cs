@@ -58,6 +58,7 @@ public class Target : MonoBehaviour
     {
         gameManager.GameOver();
     }
+	Destroy(gameObject);
 }
 
 
