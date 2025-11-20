@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Target : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class Target : MonoBehaviour
 	private GameManager gameManager;
 	public int pointValue;
 	public ParticleSystem explosionParticle;
+
 
     void Start()
     {
@@ -33,7 +36,7 @@ public class Target : MonoBehaviour
 
     Vector3 RandomSpawnPos()
     {
-        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos, 0);
+        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos);
     }
 
     
@@ -44,6 +47,12 @@ public class Target : MonoBehaviour
         gameManager.UpdateScore(pointValue);
     }
 
+    if (gameObject.CompareTag("Bad 1"))
+    {
+        gameManager.GameOver();
+    }
+	
+
 	Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
 	Destroy(gameObject);
 	}
@@ -52,14 +61,11 @@ public class Target : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
 {
-    Destroy(gameObject);
+    	Destroy(gameObject);
 
-    if (gameObject.CompareTag("Bad 1"))
-    {
-        gameManager.GameOver();
-    }
-	Destroy(gameObject);
+
 }
+
 
 
 

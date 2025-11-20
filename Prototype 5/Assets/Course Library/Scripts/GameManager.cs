@@ -8,10 +8,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> targets;
-    public float baseSpawnRate = 1.0f;  // new base rate
-    private float spawnRate;
+    private float spawnRate = 1.0f;
     private int score;
-
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI gameOverText;
     public bool isGameActive;
@@ -20,13 +18,18 @@ public class GameManager : MonoBehaviour
 
 void Start()
 {
-    spawnRate = baseSpawnRate;
-    isGameActive = false;        // NOT TRUE
-    score = 0;
-    UpdateScore(0);
+	
+    }
 
-    titleScreen.gameObject.SetActive(true);  // SHOW TITLE SCREEN
-}
+	public void StartGame(int difficulty) 
+{
+	StartCoroutine(SpawnTarget());
+	isGameActive = true;        
+	score = 0;
+	UpdateScore(0);
+	titleScreen.gameObject.SetActive(false); 
+	spawnRate /= difficulty;
+    }
 
     IEnumerator SpawnTarget()
     {
@@ -54,18 +57,6 @@ void Start()
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public void StartGame(int difficulty)
-    {
-        spawnRate = baseSpawnRate / Mathf.Max(1, difficulty);
-
-        isGameActive = true;
-        score = 0;
-
-        StartCoroutine(SpawnTarget());
-        UpdateScore(0);
-        titleScreen.gameObject.SetActive(false);
     }
 
     //  keep your original zero-arg version if something else calls it

@@ -4,16 +4,14 @@ using UnityEngine.UI;
 public class DifficultyButton : MonoBehaviour
 {
     private Button button;
-    public GameManager gameManager; // assign in inspector
-    public int difficulty = 1;
+    public GameManager gameManager;
+    public int difficulty;
 
     void Start()
     {
         button = GetComponent<Button>();
-        if (button != null && gameManager != null)
-            button.onClick.AddListener(SetDifficulty);
-        else
-            Debug.LogError("Button or GameManager not assigned!");
+	button.onClick.AddListener(SetDifficulty);
+	gameManager= GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void SetDifficulty()
