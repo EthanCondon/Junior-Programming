@@ -1844,6 +1844,8 @@ MonoBehaviour:
   isGameActive: 0
   restartButton: {fileID: 2104063624}
   titleScreen: {fileID: 713015957}
+  xRange: 4
+  ySpawnPos: 4
 --- !u!4 &1778953554
 Transform:
   m_ObjectHideFlags: 0
@@ -2613,10 +2615,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2935542603833299597, guid: 125bc5e79c6e0e44988aae8ecac10716, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6210501
-      objectReference: {fileID: 0}
-    - target: {fileID: 2935542603833299597, guid: 125bc5e79c6e0e44988aae8ecac10716, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.22
       objectReference: {fileID: 0}
@@ -2656,14 +2654,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3773729090710463856, guid: 125bc5e79c6e0e44988aae8ecac10716, type: 3}
-      propertyPath: pointValue
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3773729090710463856, guid: 125bc5e79c6e0e44988aae8ecac10716, type: 3}
-      propertyPath: explosionParticle
-      value: 
-      objectReference: {fileID: 3199346384015752365, guid: 307229a5540374aae98859caad2128a3, type: 3}
     - target: {fileID: 8411300203374724923, guid: 125bc5e79c6e0e44988aae8ecac10716, type: 3}
       propertyPath: m_Name
       value: Gooder 3
@@ -2681,18 +2671,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1410506320635431266, guid: 138bde692e4fd4346855c6830ac643bd, type: 3}
-      propertyPath: pointValue
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1410506320635431266, guid: 138bde692e4fd4346855c6830ac643bd, type: 3}
-      propertyPath: explosionParticle
-      value: 
-      objectReference: {fileID: 3199346384015752365, guid: 307229a5540374aae98859caad2128a3, type: 3}
-    - target: {fileID: 1572085794875423839, guid: 138bde692e4fd4346855c6830ac643bd, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3185
-      objectReference: {fileID: 0}
     - target: {fileID: 1572085794875423839, guid: 138bde692e4fd4346855c6830ac643bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.683109
@@ -2754,10 +2732,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1367469749480742149, guid: 6f9e6c59c107cf643b6a8f701ca60e10, type: 3}
-      propertyPath: m_TagString
-      value: Bad 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6117704777331342042, guid: 6f9e6c59c107cf643b6a8f701ca60e10, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.21
@@ -2798,14 +2772,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7579018106981374663, guid: 6f9e6c59c107cf643b6a8f701ca60e10, type: 3}
-      propertyPath: pointValue
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579018106981374663, guid: 6f9e6c59c107cf643b6a8f701ca60e10, type: 3}
-      propertyPath: explosionParticle
-      value: 
-      objectReference: {fileID: 4758139293545943008, guid: c7ad2532a6eeb40b59033c75e71fa054, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2819,14 +2785,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2314131680274049312, guid: ca98264da75a3d74c8f79ead146ca7b2, type: 3}
-      propertyPath: pointValue
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2314131680274049312, guid: ca98264da75a3d74c8f79ead146ca7b2, type: 3}
-      propertyPath: explosionParticle
-      value: 
-      objectReference: {fileID: 3199346384015752365, guid: 307229a5540374aae98859caad2128a3, type: 3}
     - target: {fileID: 4671552166872145341, guid: ca98264da75a3d74c8f79ead146ca7b2, type: 3}
       propertyPath: m_Name
       value: Good 2

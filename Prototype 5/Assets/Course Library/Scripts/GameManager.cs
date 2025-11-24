@@ -15,10 +15,12 @@ public class GameManager : MonoBehaviour
     public bool isGameActive;
     public Button restartButton;
     public GameObject titleScreen;
+	public float xRange = 4f;
+	public float ySpawnPos = 0f;
 
 void Start()
 {
-	
+	isGameActive = true;
     }
 
 	public void StartGame(int difficulty) 
@@ -37,9 +39,14 @@ void Start()
         {
             yield return new WaitForSeconds(spawnRate);
             int index = Random.Range(0, targets.Count);
-            Instantiate(targets[index]);
+	Vector3 spawnPos = new Vector3(Random.Range(-xRange, xRange), ySpawnPos, 0);
+            Instantiate(targets[index], spawnPos, Quaternion.identity);
         }
     }
+
+
+
+
 
     public void UpdateScore(int scoreToAdd)
     {
